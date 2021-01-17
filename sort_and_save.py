@@ -4,7 +4,7 @@ import pandas as pd
 
 from bs4 import BeautifulSoup
 
-df = pd.read_csv(f'./all_companies_ever_listed_on_B3_and_their_status.csv')
+df = pd.read_csv(f'./all_companies_ever_listed_on_CVM_and_their_status.csv')
 
 cancelado = []
 cancelado_nome = []
@@ -40,8 +40,8 @@ dc = pd.DataFrame(cancelados, columns=cancelados.keys())
 print(da)
 print(dc)
 
-da.to_csv(f'./B3_active_listed.csv')
-dc.to_csv(f'./B3_cancelled_listing.csv')
+da.to_csv(f'./CVM_active_listed.csv')
+dc.to_csv(f'./CVM_cancelled_listing.csv')
 
 # df['Names']
 # df['Situacoes']

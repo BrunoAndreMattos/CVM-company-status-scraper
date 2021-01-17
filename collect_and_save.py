@@ -28,6 +28,6 @@ companies = {
 
 df = pd.DataFrame(companies, columns=companies.keys())
 
-df.to_csv(f'./all_companies_ever_listed_on_B3_and_their_status.csv')
+df.to_csv(f'./all_companies_ever_listed_on_CVM_and_their_status.csv')
 
 print(df)
